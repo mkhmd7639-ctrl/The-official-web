@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        // إنشاء كائن لقراءة الإدخال من المستخدم
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("================================");
+        System.out.println(" أهلاً بك في نظام تسجيل الدخول البسيط ");
+        System.================================");
+        
+        // طلب اسم المستخدم
+        System.out.print("أدخل اسم المستخدم: ");
+        String username = scanner.nextLine();
+        
+        // التحقق من البيانات
+        if (username.equals("admin")) {
+            System.out.println("مرحباً بك أيها المدير! تم تسجيل الدخول بنجاح.");
+        } else if (!username.isEmpty()) {
+            System.out.println("مرحباً بك يا " + username + "! نورت النظام.");
+        } else {
+            System.out.println("عذراً، لم تقم بإدخال أي اسم!");
+        }
+        
+        // إغلاق الماسح
+        scanner.close();
+    }
+}
+
